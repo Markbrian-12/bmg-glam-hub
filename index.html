@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Nova Studio</h1>
+    <p>Beauty • Tech • Services • Clothing</p>
+    <button id="openQuiz">Find Your Style</button>
+  </header>
+
+  <section class="cards">
+    <div class="card">Beauty Services</div>
+    <div class="card">Tech Solutions</div>
+    <div class="card">Creative Services</div>
+    <div class="card">Clothing Brand</div>
+  </section>
+<section class="booking">
+  <h2>Book a Service</h2>
+  <form id="bookingForm">
+    <input type="text" id="bname" placeholder="Your Name">
+    <select id="service">
+      <option value="">Select Service</option>
+      <option>Beauty</option>
+      <option>Tech</option>
+      <option>Creative Services</option>
+    </select>
+    <input type="date" id="date">
+    <button type="submit">Book Now</button>
+  </form>
+  <p id="bookingMsg"></p>
+</section>
+<section class="products">
+  <h2>Shop Clothing</h2>
+
+  <select id="filter">
+    <option value="all">All</option>
+    <option value="hoodie">Hoodies</option>
+    <option value="shirt">Shirts</option>
+  </select>
+
+  <div class="product-grid">
+    <div class="product hoodie">Nova Hoodie</div>
+    <div class="product shirt">Nova Tee</div>
+    <div class="product hoodie">Studio Hoodie</div>
+  </div>
+</section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" />
+      <input type="email" id="email" placeholder="Your Email" />
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formMsg"></p>
+  </section>
+
+  <!-- Quiz Modal -->
+  <div class="modal" id="quizModal">
+    <div class="modal-content">
+      <h3>What are you looking for?</h3>
+      <button class="quizBtn">Beauty</button>
+      <button class="quizBtn">Tech</button>
+      <button class="quizBtn">Clothing</button>
+      <button class="quizBtn">Services</button>
+      <br><br>
+      <button id="closeQuiz">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
